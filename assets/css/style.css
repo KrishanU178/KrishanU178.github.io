@@ -1,0 +1,96 @@
+/* another custom css file */
+@import './utilities.css';
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Ubuntu&display=swap');
+/* 
+for font-family: 'Ubuntu', sans-serif;
+font-family: 'Kanit', sans-serif;
+ */
+
+
+:root{
+    --primary:#0283f2;
+    --dark:#161616;
+    --pure:#ffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smotting:antialiased;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Kanit', 'Ubuntu';
+}
+header{
+    background-color: var(--dark);
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 90% ,0% 100% );
+   
+    
+}
+header nav{
+    padding: 2rem 0;
+    
+}
+
+header nav .branding{
+    margin-right: 3rem;
+    border: 2px solid blue;   
+}
+.container{
+    max-width: 1152px;
+    padding: 0 18px;
+    margin: 0 auto;
+ 
+}
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform:uppercase ;
+    transition: all 0.2s ease-in;
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+.branding img{
+    width: 70px;
+    height: 50px;
+}
+
+.self .left img{
+    width: 370px;
+    height: 470px;
+}
+.iam{
+    color: var(--primary);
+}
+.self .right {
+    margin-left: 1.8rem;
+    padding: 1rem;
+}
+.self .right h6{
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+.self .right h1{
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+.self .right p{
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+
+
+.self .right{
+    color: var(--pure);
+   
+}
