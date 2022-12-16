@@ -3,7 +3,8 @@
 /* Google font */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Ubuntu&display=swap');
 /* 
-for font-family: 'Ubuntu', sans-serif;
+for 
+font-family: 'Ubuntu', sans-serif;
 font-family: 'Kanit', sans-serif;
  */
 
@@ -11,13 +12,15 @@ font-family: 'Kanit', sans-serif;
 :root{
     --primary:#0283f2;
     --dark:#161616;
+    --light:#f2f3fa;
     --pure:#ffff;
+    --ternary:#898989;
+    --secondery:#070606;
 }
 
 *{
     margin: 0;
     padding: 0;
-    -webkit-font-smotting:antialiased;
     box-sizing: border-box;
     
 }
@@ -27,9 +30,7 @@ body{
 header{
     background-color: var(--dark);
     height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 90% ,0% 100% );
-   
-    
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 90% ,0% 100% );    
 }
 header nav{
     padding: 2rem 0;
@@ -60,7 +61,10 @@ header nav .left a:hover{
     width: 70px;
     height: 50px;
 }
-
+.cv-btn a{
+    text-decoration: none;
+    color: var(--pure);
+}
 .self .left img{
     width: 370px;
     height: 470px;
@@ -69,7 +73,8 @@ header nav .left a:hover{
     color: var(--primary);
 }
 .self .right {
-    margin-left: 1.8rem;
+    margin-left: 2rem;
+    margin-top: -4rem;
     padding: 1rem;
 }
 .self .right h6{
@@ -88,9 +93,110 @@ header nav .left a:hover{
     margin-bottom: 2rem;
 }
 
-
-
 .self .right{
     color: var(--pure);
    
+}
+
+section{
+    padding: 6rem 0;
+}
+
+.about .left img{
+    height: 450px;
+    width: 320px;
+}
+.about .right{
+    padding: 1rem;
+}
+.about .right h1{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.about .right p{
+    line-height: 1.8;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+}
+.about .right .social {
+   display: flex;
+   align-items: center;
+   
+   
+}
+.about .right .social a{
+    margin-top: 0.9rem;
+    margin-right: 0.9rem;
+}
+.about .right .social a img{
+    width: 100%;
+    height: 100%;
+    /* padding: 1.5rem; */
+}
+.about .right .social a img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.about .right .social a:hover{
+    transform: scale(1.4);
+    transition: all .4s ease;
+    
+}
+
+.section-heading{
+    color: var(--secondery);
+    text-align: center;
+    margin: 1rem;
+    line-height: 0.4;
+
+}
+.section-heading + p{
+    color:var(--ternary);
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+.ability{
+    background: var(--light);
+}
+.ability .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+}
+.ability .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative ;
+    padding-top: 4rem;
+    text-align: center;
+    transition: all .5s ease;
+}
+.ability .card-wrapper .card img{
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.ability .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+.ability .card-wrapper .card p{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--ternary);
+    font-family: 'Kanit', sans-serif;
+}
+.ability .card-wrapper .card:hover{
+    background: var(--dark);
+
+}
+.ability .card-wrapper .card:hover h2, .ability .card-wrapper .card:hover p{
+    color: var(--pure);
 }

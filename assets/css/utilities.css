@@ -39,6 +39,6 @@
     background-color: var(--primary);
     color:  var(--pure);
 }
-flex-1{
+.flex-1{
     flex: 1;
 }
