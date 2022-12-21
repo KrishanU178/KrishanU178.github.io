@@ -13,6 +13,7 @@ font-family: 'Kanit', sans-serif;
     --primary:#0283f2;
     --dark:#161616;
     --light:#f2f3fa;
+    --light2:#e3eafc;
     --pure:#ffff;
     --ternary:#898989;
     --secondery:#070606;
@@ -199,4 +200,38 @@ section{
 }
 .ability .card-wrapper .card:hover h2, .ability .card-wrapper .card:hover p{
     color: var(--pure);
+}
+
+/* skill section css */
+.skill{
+    background-color: var(--dark);
+}
+
+.skill .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+}
+.skill .card-wrapper .card{
+    background: var(--light2);
+    padding: 1.5rem 0;
+    text-align: center;
+    /* transition: all .5s ease; */
+}
+.skill-section-heading{
+    color: var(--pure);
+    text-align: center;
+    margin: 1rem;
+    line-height: 0.4;
+}
+.skill-section-heading+p{
+    color:var(--ternary);
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.skill-card .card:hover{
+    transform: scale(1.2);
+    transition: all .5s ease;
 }
