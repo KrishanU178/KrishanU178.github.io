@@ -7,8 +7,6 @@ for
 font-family: 'Ubuntu', sans-serif;
 font-family: 'Kanit', sans-serif;
  */
-
-
 :root{
     --primary:#0283f2;
     --dark:#161616;
@@ -93,16 +91,13 @@ header nav .left a:hover{
     line-height: 1.8;
     margin-bottom: 2rem;
 }
-
 .self .right{
     color: var(--pure);
    
 }
-
 section{
     padding: 6rem 0;
 }
-
 .about .left img{
     height: 450px;
     width: 320px;
@@ -146,18 +141,16 @@ section{
     transition: all .4s ease;
     
 }
-
 .section-heading{
     color: var(--secondery);
     text-align: center;
     margin: 1rem;
     line-height: 0.4;
-
 }
 .section-heading + p{
     color:var(--ternary);
     font-family: 'Kanit', sans-serif;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 .ability{
@@ -182,7 +175,6 @@ section{
     top: -2.5rem;
     left: 50%;
     transform: translateX(-50%);
-
 }
 .ability .card-wrapper .card h2{
     font-weight: 400;
@@ -206,7 +198,6 @@ section{
 .skill{
     background-color: var(--dark);
 }
-
 .skill .card-wrapper{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -217,7 +208,6 @@ section{
     background: var(--light2);
     padding: 1.5rem 0;
     text-align: center;
-    /* transition: all .5s ease; */
 }
 .skill-section-heading{
     color: var(--pure);
@@ -234,4 +224,38 @@ section{
 .skill-card .card:hover{
     transform: scale(1.2);
     transition: all .5s ease;
+}
+section.project{
+    background-color: var(--light2);
+}
+section.project .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+}
+section.project .card-wrapper .card{
+    position: relative;
+}
+section.project .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0282f2e0;
+    color: var(--light);
+    opacity: 0;
+}
+section.project .card-wrapper .card:hover .overlay{
+    opacity: 1;
+    transition: all .5s ease;
+}
+section.project .card-wrapper .card .overlay a{
+    color: var(--secondery);
+    text-decoration: none;
 }
