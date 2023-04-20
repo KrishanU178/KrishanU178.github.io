@@ -259,3 +259,47 @@ section.project .card-wrapper .card .overlay a{
     color: var(--secondery);
     text-decoration: none;
 }
+section.publication{
+    background: var(--dark);
+}
+section.publication .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+section.publication .card-wrapper .card{
+    background: var(--pure);
+}
+section.publication .card-wrapper .card .img-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+section.publication .card-wrapper .card .card-content{
+    padding: 1rem 2rem;
+}
+section.publication .card-wrapper .card .card-content h1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+section.publication .card-wrapper .card .card-content a{
+    text-decoration: none;
+    color: var(--secondery);
+}
+section.publication .card-wrapper .card .card-content a:hover{
+    color: var(--primary);
+}
+section.publication .card-wrapper .card .card-content span{
+    color: var(--ternary);
+    font-size: 0.7rem;
+}
+section.publication .card-wrapper .card .card-content p{
+    font-family: 'Kanit', sans-serif;
+    color: var(--ternary);
+    margin: 1rem 0;
+    
+}
+section.publication .card-wrapper .card .card-content a.view-paper{
+    font-size: 0.8rem;
+    
+}
