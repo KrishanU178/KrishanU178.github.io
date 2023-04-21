@@ -303,3 +303,65 @@ section.publication .card-wrapper .card .card-content a.view-paper{
     font-size: 0.8rem;
     
 }
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+section.contact .card-wrapper .card{
+   text-align: center; 
+}
+section.contact .card-wrapper .card img{
+   height: 50px;
+   width: 50px;
+   margin-bottom: 2rem;
+}
+section.contact .card-wrapper .card h1{
+   font-weight: 400;
+   margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h6{
+   font-size: 1rem;
+   color: var(--ternary);
+   font-weight: 400;
+   margin-bottom: 3rem;
+}
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+    /* font-size: 0.9rem; */
+}
+section.contact input{
+    padding: 0.6rem;
+    border: 1px solid var(--ternary);
+    font-size: 0.9rem
+}
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    font-size: 0.9rem
+    
+}
+section.contact .input-wrap-2 textarea{
+    padding: 0.6rem;
+    border: 1px solid var(--ternary);
+    font-size: 0.9rem
+}
+section.contact input,section.contact textarea:focus{
+    outline: none;
+}
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--light);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 67% ,0% 100% );
+}
